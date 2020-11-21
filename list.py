@@ -15,6 +15,7 @@ def append_sum(lst):
   return lst
 
 #Uncomment the line below when your function is done
+print("\n1. Append Sum")
 print(append_sum([1, 1, 2]))
 
 """
@@ -35,6 +36,7 @@ def larger_list(lst1,lst2):
   return last_element
 
 #Uncomment the line below when your function is done
+print("\n2. Larger lists")
 print(larger_list([4, 10, 2, 5], [-10, 2, 5, 10]))
 
 """
@@ -58,6 +60,7 @@ def more_than_n(lst,item,n):
     return False
 
 #Uncomment the line below when your function is done
+print("\n3. More Than N")
 print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
 
 """
@@ -67,5 +70,24 @@ Create a function called append_size that has one parameter named lst.
 The function should append the size of lst (inclusive) to the end of lst. The function should then return this new list.
 
 For example, if lst was [23, 42, 108], the function should return [23, 42, 108, 3] because the size of lst was originally 3.
+"""
+
+#Write your function here
+def append_size(lst):
+  the_len = len(lst)
+  lst.append(the_len)
+
+  return lst
+
+#Uncomment the line below when your function is done
+print("\n4. Append Size")
+print(append_size([23, 42, 108]))
+
+"""
+5. Combine Sort
+
+Write a function named combine_sort that has two parameters named lst1 and lst2.
+
+The function should combine these two lists into one new list and sort the result. Return the new sorted list.
 """
 
