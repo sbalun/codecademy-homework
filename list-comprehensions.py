@@ -37,8 +37,20 @@ fahrenheit = [temp * 9/5 + 32 for temp in celsius]
 
 print(fahrenheit)
 
-
+#
+# Example 3
+#
 nums = [4, 8, 15, 16, 23, 42]
+
+"""
+The list comprehension that follows will:
+
+1. Take an element from the list, nums
+2. Assign this value to the variable, number
+3. number % 2 will yeild a 0 when number is an even number, 1 when number is an odd number
+4. The value of the modulo operation from step 3 will be assigned to the list, parity
+
+"""
 
 parity = [number % 2 for number in nums]
 
