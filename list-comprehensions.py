@@ -76,3 +76,15 @@ names = ["Elaine", "George", "Jerry", "Cosmo"]
 greetings = ["Hello, "+ name for name in names]
 
 print(greetings)
+
+#
+# Example 5
+#
+print_output_seperator(5)
+
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+#
+# Problem: Create a new list named first_character that contains the first character from every name in the list names
+#
+first_character = [name[0] for name in names]
+print(first_character)
