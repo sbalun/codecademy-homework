@@ -88,3 +88,16 @@ names = ["Elaine", "George", "Jerry", "Cosmo"]
 #
 first_character = [name[0] for name in names]
 print(first_character)
+
+#
+# Example 6
+#
+print_output_seperator(6)
+
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+
+# Problem: Create a new list named lengths that contains the size of each name in the list of names
+
+lengths = [len(name) for name in names]
+
+print(lengths)
