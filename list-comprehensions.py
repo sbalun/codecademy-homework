@@ -131,3 +131,55 @@ print(is_Jerry)
 # Example 9
 #
 print_output_seperator(9)
+
+nums = [5, -10, 40, 20, 0]
+
+# Problem: Create a new list called greater_than_two, in which an entry at position i is True if the entry in nums at position i is greater than 2.
+greater_than_two = [number > 2 for number in nums]
+
+print(greater_than_two)
+
+#
+# Example 10
+#
+print_output_seperator(10)
+
+nested_lists = [[4, 8], [15, 16], [23, 42]]
+# Problem: Create a new list named product that contains the product of each sub-list of nested_lists.
+product = [num1 * num2 for (num1,num2) in nested_lists]
+
+print(product)
+#
+# Example 11
+#
+print_output_seperator(11)
+
+nested_lists = [[4, 8], [16, 15], [23, 42]]
+
+# Problem: Create a new list named greater_than that contains True if the first number in the 
+# sub-list is greater than the second number in the sub-list, and False otherwise.
+
+greater_than = [num1 > num2 for (num1,num2) in nested_lists]
+
+print(greater_than)
+
+#
+# Example XX
+#
+print_output_seperator(12)
+
+# Problem: 
+
+#
+# Example XX
+#
+print_output_seperator(12)
+
+# Problem: 
+
+#
+# Example XX
+#
+print_output_seperator(12)
+
+# Problem: 
