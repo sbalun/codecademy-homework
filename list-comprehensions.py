@@ -164,22 +164,55 @@ greater_than = [num1 > num2 for (num1,num2) in nested_lists]
 print(greater_than)
 
 #
-# Example XX
+# Example 12
 #
 print_output_seperator(12)
+
+nested_lists = [[4, 8], [16, 15], [23, 42]]
+
+# Problem: reate a new list named first_only that contains the first element in each sub-list of nested_lists.
+
+first_only = [num1 for (num1,num2) in nested_lists]
+
+print(first_only)
+
+#
+# Example 13
+#
+print_output_seperator(13)
+
+a = [1.0, 2.0, 3.0]
+b = [4.0, 5.0, 6.0]
+# Problem: Use list comprehension and the zip function to create a new list 
+# named sums that sums corresponding items in lists a and b. For example, 
+# the first item in the new list should be 5 from adding 1 and 4 together.
+sums = [num1 + num2 for (num1, num2) in list(zip(a,b))]
+
+print(sums)
+#
+# Example XX
+#
+print_output_seperator(14)
 
 # Problem: 
 
 #
 # Example XX
 #
-print_output_seperator(12)
+print_output_seperator(15)
 
-# Problem: 
+# Problem:
 
 #
 # Example XX
 #
-print_output_seperator(12)
+print_output_seperator(16)
 
-# Problem: 
+# Problem:
+
+#
+# Example XX
+#
+print_output_seperator(17)
+
+# Problem:
