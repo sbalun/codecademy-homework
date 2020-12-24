@@ -101,3 +101,33 @@ names = ["Elaine", "George", "Jerry", "Cosmo"]
 lengths = [len(name) for name in names]
 
 print(lengths)
+
+#
+# Example 7
+#
+print_output_seperator(7)
+
+booleans = [True, False, True]
+
+# Problem: Create a new list named opposite that contains the opposite boolean for each element in the list booleans.
+opposite =[not bools for bools in booleans]
+
+print(opposite)
+
+#
+# Example 8
+#
+print_output_seperator(8)
+
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+# Problem: Create a new list called is_Jerry, in which an entry at position i is True if the 
+# entry in names at position i equals "Jerry". The entry should be False otherwise
+
+is_Jerry = [name == "Jerry" for name in names]
+
+print(is_Jerry)
+
+#
+# Example 9
+#
+print_output_seperator(9)
