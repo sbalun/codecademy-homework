@@ -1,12 +1,29 @@
 # List Comprehension
+#
+# The  exercises that follow will be practice on basic list comprehension syntax like:
 
-# Helper Methods
-def print_output_seperator(example_number):
+temperatures = [-5, 29, 26, -7, 1, 18, 12, 31]
+temperatures_adjusted = [temp + 20 for temp in temperatures]
+
+# and basic zip syntax like:
+x = zip([1, 2, 3], [4, 6, 8])
+
+# Also, along the way  will be practicing these core Python concepts:
+"""
+* Strings and substrings
+* Getting characters from an index
+* Boolean operators and comparators
+* Mathematical operations
+* String concatenation
+* Casting from an integer to a string
+"""
+####   Helper Methods   ####
+def print_output_seperator(example_number = 2112):
     print("#")
     print("Example " + str(example_number))
     print("#")
-
-
+#
+#
 #
 # Example 1
 #
@@ -212,18 +229,38 @@ countries = ["Chile", "France", "Denmark"]
 # is "Lima" and the 5th item in the countries list is "Peru", then the 5th item in the 
 # new list should be "Lima, Peru"
 locations = [cap + ", " + ctr for (cap,ctr) in list(zip(capitals,countries))]
-print(list(zip(capitals,countries)))
 print(locations)
 #
-# Example XX
+# Example 16
 #
 print_output_seperator(16)
-
-# Problem:
-
+names = ["Shilah", "Arya", "Kele"]
+ages = [14, 9, 35]
+# Problem: Given two lists: a list of names and a list of ages. Create a new list named 
+# users that contains the string "Name: name, Age: age" for each pair of elements in the 
+# original lists. For example, if the 5th item in the names list is "Aiyana" and the 
+# 5th item in ages is 42, then the 5th item in the new list should be "Name: Aiyana, Age: 42".
+users = ["Name: " + name + ", Age: " +  str(age) for (name,age) in list(zip(names,ages))]
+print(users)
 #
-# Example XX
-#
+# Example x
 print_output_seperator(17)
-
+#
+a = [30, 42, 10]
+b = [15, 16, 17]
+# Problem: Create a new list named greater_than that contains True or False depending on whether 
+# the corresponding item in list a is greater than the one in list b. For example, if the 2nd 
+# item in list a is 3, and the 2nd item in list b is 5, the 2nd item in the new list should be False.
+#
+greater_than = [num_frm_a > num_frm_b for (num_frm_a,num_frm_b) in list(zip(a,b))]
+print(greater_than)
+# Example x
+print_output_seperator()
+#
 # Problem:
+#
+# Example x
+print_output_seperator()
+#
+# Problem:
+#
