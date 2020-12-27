@@ -190,19 +190,30 @@ sums = [num1 + num2 for (num1, num2) in list(zip(a,b))]
 
 print(sums)
 #
-# Example XX
+# Example 14
 #
 print_output_seperator(14)
-
-# Problem: 
-
+a = [1.0, 2.0, 3.0]
+b = [4.0, 5.0, 6.0]
+# Problem: Use list comprehension and the zip function to create a new list named 
+# quotients that divides the elements in list b by those in list a . For example, 
+# the second item in the new list should be 2.5 from dividing 5.0 by 2.0
+quotients = [num2/num1 for (num1,num2) in list(zip(a,b))]
+print(quotients)
 #
-# Example XX
+# Example 15
 #
 print_output_seperator(15)
-
-# Problem:
-
+capitals = ["Santiago", "Paris", "Copenhagen"]
+countries = ["Chile", "France", "Denmark"]
+# Problem:You’ve been given two lists: a list of capitals and a list of countries. 
+# Create a new list named locations that contains the string "capital, country" for 
+# each item in the original lists. For example, if the 5th item in the capitals list 
+# is "Lima" and the 5th item in the countries list is "Peru", then the 5th item in the 
+# new list should be "Lima, Peru"
+locations = [cap + ", " + ctr for (cap,ctr) in list(zip(capitals,countries))]
+print(list(zip(capitals,countries)))
+print(locations)
 #
 # Example XX
 #
