@@ -259,19 +259,3 @@ print("\n")
 for i in range(len(highlighted_poems_details)):
     poem, poet, date  = highlighted_poems_details[i]
     print("The poem {} was published by {} in {}".format(poem,poet,date))
-
-
-
-    
-
-
-
-
-
-#
-print_output_seperator()
-# ------------
-# Problem xxx
-# ------------
-# Problem Statement:
-
