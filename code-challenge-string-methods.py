@@ -89,8 +89,31 @@ print("The number of times 'iss' appears in the word 'mississippi' : " + str(cou
 #
 output_seperator()
 # -------------------
-#
+#  Substring Between
 # -------------------
+# substring_between_letters()
+# Write a function named substring_between_letters that takes a string named word, a single character named start, 
+# and another character named end. This function should return the substring between the first occurrence of start 
+# and end in word. If start or end are not in word, the function should return word.
+#
+# For example, substring_between_letters("apple", "p", "e") should return "pl".
+
+def substring_between_letters(word, start, end):
+    if start in word and end in word:
+        # Use .index() method to get the index of the first letter of the substring that begins after 'start'
+        start_index = word.index(start) + 1
+        # Use the .index() method to get the index of the 'end' character
+        end_index =  word.index(end)
+        # Use list slicing to extract the substring between the 'start' and 'end' characters.  Return that substring
+        return word[start_index:end_index]
+
+    return word
+
+# Testing the method substring_between_letters
+print("This should return 'pl' : " + substring_between_letters("apple", "p", "e"))
+# should print "pl"
+print("This should return 'apple' : " + substring_between_letters("apple", "p", "c"))
+# should print "apple"
 
 
 
