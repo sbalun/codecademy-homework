@@ -174,9 +174,22 @@ print("This should print False: " + str(check_for_name("My name is Samantha", "J
 
 output_seperator()
 # -------------------
-#
+# Every Other Letter
 # -------------------
-#
+# every_other_letter()
+# Create a function named every_other_letter that takes a string named word as a parameter. 
+# The function should return a string containing every other letter in word.
+
+def every_other_letter(word):
+    every_other_letter =[]
+    for index in range(len(word)):
+        if index % 2 == 0:
+            every_other_letter.append(word[index])
+
+    return "".join(every_other_letter)
+
+print("This encrypted sentence, caoloil^ !i7t- -fprmilcpkpenn- -w8o9rnk!s?!, actually says: " + str(every_other_letter("caoloil^ !i7t- -fprmilcpkpenn- -w8o9rnk!s?!")))
+
 output_seperator()
 # -------------------
 #
