@@ -144,5 +144,40 @@ print("The output for x_length_words should be True: " + str(x_length_words("he 
 #
 output_seperator()
 # -------------------
+#    Check Name
+# -------------------
+# check_for_name()
+# Write a function called check_for_name that takes two strings as parameters named sentence and name.
+# The function should return True if name appears in sentence in all lowercase letters, all uppercase letters, 
+# or with any mix of uppercase and lowercase letters. The function should return False otherwise.
+#
+# For example, the following three calls should all return True:
+#   check_for_name("My name is Jamie", "Jamie")
+#   check_for_name("My name is jamie", "Jamie")
+#   check_for_name("My name is JAMIE", "Jamie")
+
+def check_for_name(sentence, name):
+    sentence_as_list = sentence.split()
+    sentence_in_lower_case = []
+    for word in sentence_as_list:
+        sentence_in_lower_case.append(word.lower())
+    new_sentence = "".join(sentence_in_lower_case)
+    lower_name = name.lower()
+    return lower_name in new_sentence
+
+print("This should print True: " + str(check_for_name("My name is Jamie", "Jamie")))
+# should print True
+print("This should print True: " + str(check_for_name("My name is jamie", "Jamie")))
+# should print True
+print("This should print False: " + str(check_for_name("My name is Samantha", "Jamie")))
+# should print False
+
+output_seperator()
+# -------------------
+#
+# -------------------
+#
+output_seperator()
+# -------------------
 #
 # -------------------
