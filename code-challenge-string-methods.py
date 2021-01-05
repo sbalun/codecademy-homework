@@ -32,10 +32,10 @@ def unique_english_letters(word):
     return start_len - len(letters)
 
 # Uncomment these function calls to test your function:
-print("The number of unique letters in the string mississippi is: " + str(unique_english_letters("mississippi")))
+print("The number of unique letters in the string 'mississippi' is: " + str(unique_english_letters("mississippi")))
 # should print 4
 
-print("The number of unique letters in the string Apples is: " + str(unique_english_letters("Apples")))
+print("The number of unique letters in the string 'Apples' is: " + str(unique_english_letters("Apples")))
 # should print 5
 # 
 output_seperator()
@@ -137,9 +137,9 @@ def x_length_words(sentence, x):
     return all_words_greater_or_equal_to_x
 
 # Testing the function, x_length_words
-print("The output for x_length_words should be False: " + str(x_length_words("i like apples", 2)))
+print("The output for 'x_length_words' should be False: " + str(x_length_words("i like apples", 2)))
 # should print False
-print("The output for x_length_words should be True: " + str(x_length_words("he likes apples", 2)))
+print("The output for 'x_length_words' should be True: " + str(x_length_words("he likes apples", 2)))
 # should print True
 #
 output_seperator()
@@ -207,4 +207,46 @@ def reverse_string(word):
 print("This should print ymedacedoC: " + reverse_string("Codecademy"))
 print("This should print !dlrow olleH: " + reverse_string("Hello world!"))
 print("This should print : " + reverse_string(""))
-    
+
+output_seperator()
+# -------------------
+#  Make Spoonerism     
+# -------------------
+# make_spoonerism()
+# Write a function called make_spoonerism that takes two strings as parameters named word1 and word2. 
+# Finding the first syllable of a word is a difficult task, so for our function, we’re going to switch 
+# the first letters of each word. Return the two new words as a single string separated by a space.
+
+def make_spoonerism(word1, word2):
+    return word2[0] + word1[1:len(word1)] + " " + word1[0] + word2[1:len(word2)]
+
+# Testing the function make_spoonerism
+print("This should print 'Lodecademy Cearn': " + make_spoonerism("Codecademy", "Learn"))
+# should print Lodecademy Cearn
+print("This should print 'wello Horld!': " + make_spoonerism("Hello", "world!"))
+# should print wello Horld!
+print("This hould print 'b a': " + make_spoonerism("a", "b"))
+# should print b a
+
+output_seperator()
+# -------------------
+#   Add Exclamation     
+# -------------------  
+# add_exclamation()
+# Create a function named add_exclamation that has one parameter named word. 
+# This function should add exclamation points to the end of word until word is 
+# 20 characters long. If word is already at least 20 characters long, just return word.
+
+def add_exclamation(word):
+    if len(word) >= 20:
+        return word
+    else:
+        while len(word) < 20:
+            word += "!"
+
+    return word
+
+print("This should print 'Codecademy!!!!!!!!!!': " + add_exclamation("Codecademy"))
+# should print Codecademy!!!!!!!!!!
+print("This should print 'Codecademy is the best place to learn': " + add_exclamation("Codecademy is the best place to learn"))
+# should print Codecademy is the best place to learn
