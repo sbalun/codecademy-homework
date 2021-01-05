@@ -192,5 +192,19 @@ print("This encrypted sentence, caoloil^ !i7t- -fprmilcpkpenn- -w8o9rnk!s?!, act
 
 output_seperator()
 # -------------------
-#
+#      Reverse
 # -------------------
+# reverse_string()
+# Write a function named reverse_string that has a string named word as a parameter. The function should return word in reverse.
+
+def reverse_string(word):
+    reverse_word = []
+    for index in range(len(word)-1, -1, -1):
+        reverse_word.append(word[index])
+
+    return "".join(reverse_word)
+
+print("This should print ymedacedoC: " + reverse_string("Codecademy"))
+print("This should print !dlrow olleH: " + reverse_string("Hello world!"))
+print("This should print : " + reverse_string(""))
+    
