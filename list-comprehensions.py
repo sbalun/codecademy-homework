@@ -1,6 +1,6 @@
 # List Comprehension
 #
-# The  exercises that follow will be practice on basic list comprehension syntax like:
+# The exercises that follow will be practice on basic list comprehension syntax like:
 
 temperatures = [-5, 29, 26, -7, 1, 18, 12, 31]
 temperatures_adjusted = [temp + 20 for temp in temperatures]
@@ -35,8 +35,8 @@ heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
 This list comprehension:
 
 1. Takes an element in heights
-2. Assigns that element to a variable called x_height
-3. Checks if x_height > 161.  If so, adds that value to can_ride_coaster
+2. Assigns that element to a variable called can_ride_coaster
+3. Checks if height > 161.  If so, adds that value to can_ride_coaster
 4. Repeats steps 1-3 for all of the values in heights
 
 """
